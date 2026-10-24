@@ -1,0 +1,29 @@
+name: h8
+on:
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: shard folder under shards/
+        required: true
+run-name: h8 ${{ inputs.tag }}
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 340
+    env:
+      TAG: ${{ inputs.tag }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: shards/${{ inputs.tag }}
+      - name: work
+        run: |
+          cd "shards/$TAG"
+          set -a; . ./env.sh; set +a
+          python3 worker.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: result-${{ inputs.tag }}
+          path: shards/${{ inputs.tag }}/result
+          retention-days: 3
+          compression-level: 1
