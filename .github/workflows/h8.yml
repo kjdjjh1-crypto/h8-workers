@@ -6,6 +6,8 @@ on:
         description: shard folder under shards/
         required: true
 run-name: h8 ${{ inputs.tag }}
+permissions:
+  contents: write
 jobs:
   run:
     runs-on: ubuntu-latest
@@ -21,9 +23,10 @@ jobs:
           cd "shards/$TAG"
           set -a; . ./env.sh; set +a
           python3 worker.py
-      - uses: actions/upload-artifact@v4
-        with:
-          name: result-${{ inputs.tag }}
-          path: shards/${{ inputs.tag }}/result
-          retention-days: 3
-          compression-level: 1
+      # artifact 저장소는 한국에서 80KB/s 라서 release 자산(CDN)으로 내보낸다.
+      - name: publish
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          tar -C "shards/$TAG" -cf result.tar result
+          gh release create "r-$TAG" result.tar --repo "$GITHUB_REPOSITORY" --title "r-$TAG" --notes "h8 result $TAG" --target "$GITHUB_SHA"
