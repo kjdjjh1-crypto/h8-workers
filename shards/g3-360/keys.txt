@@ -1,0 +1,2 @@
+data/futures/um/monthly/trades/LINKUSDT/LINKUSDT-trades-2026-08.zip
+data/futures/um/monthly/trades/LINKUSDT/LINKUSDT-trades-2026-09.zip
