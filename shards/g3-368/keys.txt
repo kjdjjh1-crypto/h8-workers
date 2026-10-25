@@ -1,0 +1,13 @@
+data/futures/um/monthly/trades/BNBUSDT/BNBUSDT-trades-2021-02.zip
+data/futures/um/monthly/trades/BNBUSDT/BNBUSDT-trades-2021-03.zip
+data/futures/um/monthly/trades/BNBUSDT/BNBUSDT-trades-2021-04.zip
+data/futures/um/monthly/trades/BNBUSDT/BNBUSDT-trades-2021-05.zip
+data/futures/um/monthly/trades/BNBUSDT/BNBUSDT-trades-2021-06.zip
+data/futures/um/monthly/trades/BNBUSDT/BNBUSDT-trades-2021-07.zip
+data/futures/um/monthly/trades/BNBUSDT/BNBUSDT-trades-2021-08.zip
+data/futures/um/monthly/trades/BNBUSDT/BNBUSDT-trades-2021-09.zip
+data/futures/um/monthly/trades/BNBUSDT/BNBUSDT-trades-2021-10.zip
+data/futures/um/monthly/trades/BNBUSDT/BNBUSDT-trades-2021-11.zip
+data/futures/um/monthly/trades/BNBUSDT/BNBUSDT-trades-2021-12.zip
+data/futures/um/monthly/trades/BNBUSDT/BNBUSDT-trades-2022-01.zip
+data/futures/um/monthly/trades/BNBUSDT/BNBUSDT-trades-2022-02.zip
