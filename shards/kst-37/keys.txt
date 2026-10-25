@@ -1,0 +1,5 @@
+data/spot/monthly/trades/BTCUSDT/BTCUSDT-trades-2021-03.zip
+data/spot/monthly/trades/BTCUSDT/BTCUSDT-trades-2021-04.zip
+data/spot/monthly/trades/BTCUSDT/BTCUSDT-trades-2021-05.zip
+data/spot/monthly/trades/BTCUSDT/BTCUSDT-trades-2021-06.zip
+data/spot/monthly/trades/BTCUSDT/BTCUSDT-trades-2021-07.zip
