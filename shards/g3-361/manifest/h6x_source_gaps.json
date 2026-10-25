@@ -1,0 +1,562 @@
+{
+  "version": 1,
+  "note": "바이낸스 원본 결손 목록 — C2X에서 이 구간 안의 어긋난 분은 방향이 맞을 때만 known_gaps로 옮기고 단위 판정은 PASS_KNOWN. 2026-10-20 대장님 지시(2022-02-14 구멍, 현물 두 분). 시각은 UTC, from 포함·to 제외. expect: tf_short = 우리 거래 수 < kline(파일에 거래가 없다), kline_short = 우리 > kline(kline 쪽이 모자라다).",
+  "gaps": [
+    {
+      "id": "um-2022-02-14-file-hole",
+      "key": "data/futures/um/monthly/trades/ETHUSDT/ETHUSDT-trades-2022-02.zip",
+      "from": "2022-02-14T07:28:00Z",
+      "to": "2022-02-15T00:00:00Z",
+      "expect": "tf_short",
+      "evidence": "c2_mismatch 992분 모두 tf_short (07:28~23:59), 구간 앞뒤 거래 번호 1428554618 → 1430209232"
+    },
+    {
+      "id": "um-2022-02-14-file-hole",
+      "key": "data/futures/um/monthly/trades/BCHUSDT/BCHUSDT-trades-2022-02.zip",
+      "from": "2022-02-14T07:28:00Z",
+      "to": "2022-02-15T00:00:00Z",
+      "expect": "tf_short",
+      "evidence": "원본 zip sha256 cbcd0384… 직접 확인: 07:28:03.425 다음 거래가 02-15 00:00:03.213, 거래 번호 285062909 → 285242692 사이 179,782개 없음; c2_mismatch 992분 모두 tf_short"
+    },
+    {
+      "id": "um-2022-02-14-file-hole",
+      "key": "data/futures/um/monthly/trades/ETCUSDT/ETCUSDT-trades-2022-02.zip",
+      "from": "2022-02-14T07:28:00Z",
+      "to": "2022-02-15T00:00:00Z",
+      "expect": "tf_short",
+      "evidence": "c2_mismatch 992분 모두 tf_short, 거래 번호 356573880 → 356905950"
+    },
+    {
+      "id": "um-2022-02-14-file-hole",
+      "key": "data/futures/um/monthly/trades/DOTUSDT/DOTUSDT-trades-2022-02.zip",
+      "from": "2022-02-14T07:28:00Z",
+      "to": "2022-02-15T00:00:00Z",
+      "expect": "tf_short",
+      "evidence": "c2_mismatch 992분 모두 tf_short, 거래 번호 435356057 → 435724765"
+    },
+    {
+      "id": "spot-2022-02-05-0600-kline-short",
+      "key": "data/spot/monthly/trades/BTCUSDT/BTCUSDT-trades-2022-02.zip",
+      "from": "2022-02-05T06:00:00Z",
+      "to": "2022-02-05T06:01:00Z",
+      "expect": "kline_short",
+      "evidence": "trades 683 > kline 589"
+    },
+    {
+      "id": "spot-2022-02-23-0600-kline-short",
+      "key": "data/spot/monthly/trades/BTCUSDT/BTCUSDT-trades-2022-02.zip",
+      "from": "2022-02-23T06:00:00Z",
+      "to": "2022-02-23T06:01:00Z",
+      "expect": "kline_short",
+      "evidence": "trades 656 > kline 513"
+    },
+    {
+      "id": "spot-2022-02-05-0600-kline-short",
+      "key": "data/spot/monthly/trades/ETHUSDT/ETHUSDT-trades-2022-02.zip",
+      "from": "2022-02-05T06:00:00Z",
+      "to": "2022-02-05T06:01:00Z",
+      "expect": "kline_short",
+      "evidence": "trades 1015 > kline 931"
+    },
+    {
+      "id": "spot-2022-02-23-0600-kline-short",
+      "key": "data/spot/monthly/trades/ETHUSDT/ETHUSDT-trades-2022-02.zip",
+      "from": "2022-02-23T06:00:00Z",
+      "to": "2022-02-23T06:01:00Z",
+      "expect": "kline_short",
+      "evidence": "trades 409 > kline 306"
+    },
+    {
+      "id": "spot-2022-02-05-0600-kline-short",
+      "key": "data/spot/monthly/trades/BCHUSDT/BCHUSDT-trades-2022-02.zip",
+      "from": "2022-02-05T06:00:00Z",
+      "to": "2022-02-05T06:01:00Z",
+      "expect": "kline_short",
+      "evidence": "trades 24 > kline 20"
+    },
+    {
+      "id": "spot-2022-02-23-0600-kline-short",
+      "key": "data/spot/monthly/trades/BCHUSDT/BCHUSDT-trades-2022-02.zip",
+      "from": "2022-02-23T06:00:00Z",
+      "to": "2022-02-23T06:01:00Z",
+      "expect": "kline_short",
+      "evidence": "trades 17 > kline 16"
+    },
+    {
+      "id": "spot-2022-02-05-0600-kline-short",
+      "key": "data/spot/monthly/trades/ETCUSDT/ETCUSDT-trades-2022-02.zip",
+      "from": "2022-02-05T06:00:00Z",
+      "to": "2022-02-05T06:01:00Z",
+      "expect": "kline_short",
+      "evidence": "trades 39 > kline 29"
+    },
+    {
+      "id": "spot-2022-02-23-0600-kline-short",
+      "key": "data/spot/monthly/trades/ETCUSDT/ETCUSDT-trades-2022-02.zip",
+      "from": "2022-02-23T06:00:00Z",
+      "to": "2022-02-23T06:01:00Z",
+      "expect": "kline_short",
+      "evidence": "trades 20 > kline 18"
+    },
+    {
+      "id": "spot-2022-02-05-0600-kline-short",
+      "key": "data/spot/monthly/trades/DOTUSDT/DOTUSDT-trades-2022-02.zip",
+      "from": "2022-02-05T06:00:00Z",
+      "to": "2022-02-05T06:01:00Z",
+      "expect": "kline_short",
+      "evidence": "trades 154 > kline 139"
+    },
+    {
+      "id": "spot-2022-02-23-0600-kline-short",
+      "key": "data/spot/monthly/trades/DOTUSDT/DOTUSDT-trades-2022-02.zip",
+      "from": "2022-02-23T06:00:00Z",
+      "to": "2022-02-23T06:01:00Z",
+      "expect": "kline_short",
+      "evidence": "trades 324 > kline 264"
+    }
+  ],
+  "whole_dups_note": "통째 중복 원본 — zip 안 CSV가 같은 내용을 두 번 이어 붙인 파일. 뒷 절반이 앞 절반과 바이트까지 같을 때만 앞 절반을 원본으로 읽는다 (h6_srcdup.mjs, h6_run.mjs가 시간 역행·집계 오류 때 자동 확인해 units.src_dup에 남김). zip은 바이낸스 원본 그대로 Drive에 올린다. 2026-10-21 대장님 지시.",
+  "whole_dups": [
+    {
+      "id": "spot-ethusdt-aggtrades-2021-12-whole-dup",
+      "key": "data/spot/monthly/aggTrades/ETHUSDT/ETHUSDT-aggTrades-2021-12.zip",
+      "zip_sha256": "523e102942b3dc6e4a1363f187d015b8547989be602287c2549f8561623153cd",
+      "evidence": "전체 47,668,274줄 = 23,834,137줄 × 2; 23,834,138번째 줄 = 1번째 줄 (agg id 563921842, 2021-12-01 00:00:00.000); 두 절반 md5 56a96546973994ca42402e0cf12cc372 같음; 앞 절반 거래 수 29,074,121 = 같은 달 spot ETHUSDT-trades-2021-12 줄 수"
+    },
+    {
+      "id": "spot-bchusdt-aggtrades-2021-12-whole-dup",
+      "key": "data/spot/monthly/aggTrades/BCHUSDT/BCHUSDT-aggTrades-2021-12.zip",
+      "zip_sha256": "e21f7c5ed4547c7b2b4d513228d87546d9788a756a8ce15ef829f2778ffc30d2",
+      "evidence": "units.src_dup: 전체 284143400바이트 = 앞 절반 142071700바이트(1824987줄) × 2, 두 절반 md5 1153b6a472bb3c04508eec8e80a202ca 같음 → 앞 절반만 집계"
+    },
+    {
+      "id": "spot-btcusdt-aggtrades-2021-12-whole-dup",
+      "key": "data/spot/monthly/aggTrades/BTCUSDT/BTCUSDT-aggTrades-2021-12.zip",
+      "zip_sha256": "2ff67048929833d8db2ec32df829d2594052c31799d694486d997bc85b89d42c",
+      "evidence": "units.src_dup: 전체 5388794540바이트 = 앞 절반 2694397270바이트(32269900줄) × 2, 두 절반 md5 75439cbeba6a3239b0dbb33ccd813d18 같음 → 앞 절반만 집계"
+    },
+    {
+      "id": "spot-dotusdt-aggtrades-2021-12-whole-dup",
+      "key": "data/spot/monthly/aggTrades/DOTUSDT/DOTUSDT-aggTrades-2021-12.zip",
+      "zip_sha256": "dc39bd7daef05a9f786c4ef14047a6a205fadc12d2a68ed3fc7c3c950a52183a",
+      "evidence": "units.src_dup: 전체 1147209210바이트 = 앞 절반 573604605바이트(7346561줄) × 2, 두 절반 md5 000c683f032295e762bf131535ee5438 같음 → 앞 절반만 집계"
+    },
+    {
+      "id": "spot-etcusdt-aggtrades-2021-12-whole-dup",
+      "key": "data/spot/monthly/aggTrades/ETCUSDT/ETCUSDT-aggTrades-2021-12.zip",
+      "zip_sha256": "767be7517d590d8a91fb3228fc91576fc6a9195e6dd5ac7a164011ffaadb3445",
+      "evidence": "units.src_dup: 전체 246734518바이트 = 앞 절반 123367259바이트(1581379줄) × 2, 두 절반 md5 d8861c4250747c018e143f7b74ac0c35 같음 → 앞 절반만 집계"
+    },
+    {
+      "id": "spot-bchusdt-trades-2021-05-whole-dup",
+      "key": "data/spot/monthly/trades/BCHUSDT/BCHUSDT-trades-2021-05.zip",
+      "zip_sha256": "8d56a0cb8a725e1ec9c9f3ff939ffae46bc330073764c642ba22a029af3c0e93",
+      "evidence": "units.src_dup: 전체 2292365906바이트 = 앞 절반 1146182953바이트(16152143줄) × 2, 두 절반 md5 e2661f8de2416e8e26a5a71f3f366871 같음 → 앞 절반만 집계"
+    },
+    {
+      "id": "spot-btcusdt-trades-2021-05-whole-dup",
+      "key": "data/spot/monthly/trades/BTCUSDT/BTCUSDT-trades-2021-05.zip",
+      "zip_sha256": "483701cc817708e3831e3e97fff09b83d91aae2c1ad0f89e0ae5895a7cfd0a65",
+      "evidence": "units.src_dup: 전체 12222857336바이트 = 앞 절반 6111428668바이트(83178232줄) × 2, 두 절반 md5 3b0b5c7cc5c690546333411a00d90211 같음 → 앞 절반만 집계"
+    },
+    {
+      "id": "spot-btcusdt-trades-2021-06-whole-dup",
+      "key": "data/spot/monthly/trades/BTCUSDT/BTCUSDT-trades-2021-06.zip",
+      "zip_sha256": "a799052ef89d227a3130491dad83f0bc124f9cd84670291b2212c8103823136b",
+      "evidence": "units.src_dup: 전체 8206774836바이트 = 앞 절반 4103387418바이트(55904176줄) × 2, 두 절반 md5 83b967f55439279b66ed80c1fd7bc24c 같음 → 앞 절반만 집계"
+    },
+    {
+      "id": "spot-dotusdt-trades-2021-05-whole-dup",
+      "key": "data/spot/monthly/trades/DOTUSDT/DOTUSDT-trades-2021-05.zip",
+      "zip_sha256": "34808585c874a9f24d37ada36e689e1a8dd7872300de21c3dc6260d0a0f834d9",
+      "evidence": "units.src_dup: 전체 4659203286바이트 = 앞 절반 2329601643바이트(33242335줄) × 2, 두 절반 md5 48ec20fd4627d1a6491101c87ebd2649 같음 → 앞 절반만 집계"
+    },
+    {
+      "id": "spot-etcusdt-trades-2021-04-whole-dup",
+      "key": "data/spot/monthly/trades/ETCUSDT/ETCUSDT-trades-2021-04.zip",
+      "zip_sha256": "610cbf22c457dc2ac6d23911372ce1db98e5e06e8c7e79c042d622d5acdfca71",
+      "evidence": "units.src_dup: 전체 1247644172바이트 = 앞 절반 623822086바이트(8943681줄) × 2, 두 절반 md5 6920d86760f510f396bdb155ebd9a113 같음 → 앞 절반만 집계"
+    },
+    {
+      "id": "spot-etcusdt-trades-2021-05-whole-dup",
+      "key": "data/spot/monthly/trades/ETCUSDT/ETCUSDT-trades-2021-05.zip",
+      "zip_sha256": "e326f4ac48d20caa00081388e69da02f2da949ee167e62c5918158836b57c774",
+      "evidence": "units.src_dup: 전체 4777940168바이트 = 앞 절반 2388970084바이트(34146444줄) × 2, 두 절반 md5 ef1acd7adc78fee98f13645c05d46d62 같음 → 앞 절반만 집계"
+    },
+    {
+      "id": "spot-ethusdt-trades-2021-05-whole-dup",
+      "key": "data/spot/monthly/trades/ETHUSDT/ETHUSDT-trades-2021-05.zip",
+      "zip_sha256": "cc7aac11021be5680f1590dd5873e9e520de1b39073a59694e8fc142ad490951",
+      "evidence": "units.src_dup: 전체 11699188028바이트 = 앞 절반 5849594014바이트(80643337줄) × 2, 두 절반 md5 e6242195f6cc39b872ce593be7632f7f 같음 → 앞 절반만 집계"
+    },
+    {
+      "id": "spot-ethusdt-trades-2021-06-whole-dup",
+      "key": "data/spot/monthly/trades/ETHUSDT/ETHUSDT-trades-2021-06.zip",
+      "zip_sha256": "fb4231de21fea76afa36a89a6acbb8431ba7f294b038c08eada6ee4325fed479",
+      "evidence": "units.src_dup: 전체 5796294230바이트 = 앞 절반 2898147115바이트(40015353줄) × 2, 두 절반 md5 7d3e5c09e74dc8cec7ccd154d626506c 같음 → 앞 절반만 집계"
+    }
+  ],
+  "source_events_note": "같은 시장·같은 달에 2종목 이상이 같은 분에서 함께 틀린 trades C2X FAIL — 원본 쪽 사건으로 보고 연속 FAIL 수에서 뺐다 (h6_run.mjs recountTradesStreak, 2026-10-21 대장님 지시). 단위 판정은 FAIL 그대로, 어긋난 분은 c2_mismatch에 있다.",
+  "source_events": [
+    {
+      "key": "data/spot/monthly/trades/DOTUSDT/DOTUSDT-trades-2021-01.zip",
+      "ts": "2026-10-20T18:57:22.466Z",
+      "evidence": "어긋난 3분 전부 같은 시장 다른 종목도 틀림 (분 2021-01-11T08:08,2021-01-11T08:09,2021-01-11T08:10)"
+    },
+    {
+      "key": "data/spot/monthly/trades/ETHUSDT/ETHUSDT-trades-2020-12.zip",
+      "ts": "2026-10-20T19:01:25.597Z",
+      "evidence": "어긋난 29분 전부 같은 시장 다른 종목도 틀림 (분 2020-12-21T13:19,2020-12-21T13:20,2020-12-21T13:21,2020-12-21T13:22,2020-12-21T13:23,…)"
+    },
+    {
+      "key": "data/spot/monthly/trades/BCHUSDT/BCHUSDT-trades-2020-12.zip",
+      "ts": "2026-10-20T19:02:59.198Z",
+      "evidence": "어긋난 29분 전부 같은 시장 다른 종목도 틀림 (분 2020-12-21T13:19,2020-12-21T13:20,2020-12-21T13:21,2020-12-21T13:22,2020-12-21T13:23,…)"
+    },
+    {
+      "key": "data/spot/monthly/trades/ETCUSDT/ETCUSDT-trades-2020-12.zip",
+      "ts": "2026-10-20T19:03:59.245Z",
+      "evidence": "어긋난 29분 전부 같은 시장 다른 종목도 틀림 (분 2020-12-21T13:19,2020-12-21T13:20,2020-12-21T13:21,2020-12-21T13:22,2020-12-21T13:23,…)"
+    },
+    {
+      "key": "data/spot/monthly/trades/DOTUSDT/DOTUSDT-trades-2020-12.zip",
+      "ts": "2026-10-20T19:04:40.748Z",
+      "evidence": "어긋난 29분 전부 같은 시장 다른 종목도 틀림 (분 2020-12-21T13:19,2020-12-21T13:20,2020-12-21T13:21,2020-12-21T13:22,2020-12-21T13:23,…)"
+    },
+    {
+      "key": "data/spot/monthly/trades/ETHUSDT/ETHUSDT-trades-2020-10.zip",
+      "ts": "2026-10-20T19:13:28.749Z",
+      "evidence": "어긋난 2분 전부 같은 시장 다른 종목도 틀림 (분 2020-10-27T06:22,2020-10-27T06:23)"
+    },
+    {
+      "key": "data/spot/monthly/trades/BCHUSDT/BCHUSDT-trades-2020-10.zip",
+      "ts": "2026-10-20T19:14:27.533Z",
+      "evidence": "어긋난 2분 전부 같은 시장 다른 종목도 틀림 (분 2020-10-27T06:22,2020-10-27T06:23)"
+    },
+    {
+      "key": "data/spot/monthly/trades/ETCUSDT/ETCUSDT-trades-2020-10.zip",
+      "ts": "2026-10-20T19:15:00.708Z",
+      "evidence": "어긋난 1분 전부 같은 시장 다른 종목도 틀림 (분 2020-10-27T06:22)"
+    },
+    {
+      "key": "data/spot/monthly/trades/DOTUSDT/DOTUSDT-trades-2020-10.zip",
+      "ts": "2026-10-20T19:15:40.209Z",
+      "evidence": "어긋난 1분 전부 같은 시장 다른 종목도 틀림 (분 2020-10-27T06:23)"
+    },
+    {
+      "key": "data/spot/monthly/trades/ETHUSDT/ETHUSDT-trades-2020-06.zip",
+      "ts": "2026-10-20T19:30:52.873Z",
+      "evidence": "어긋난 2분 전부 같은 시장 다른 종목도 틀림 (분 2020-06-14T01:16,2020-06-24T01:38)"
+    },
+    {
+      "key": "data/spot/monthly/trades/ETHUSDT/ETHUSDT-trades-2020-04.zip",
+      "ts": "2026-10-20T19:42:24.230Z",
+      "evidence": "어긋난 1분 전부 같은 시장 다른 종목도 틀림 (분 2020-04-09T08:42)"
+    },
+    {
+      "key": "data/spot/monthly/trades/BCHUSDT/BCHUSDT-trades-2020-04.zip",
+      "ts": "2026-10-20T19:43:26.830Z",
+      "evidence": "어긋난 1분 전부 같은 시장 다른 종목도 틀림 (분 2020-04-09T08:42)"
+    },
+    {
+      "key": "data/spot/monthly/trades/ETCUSDT/ETCUSDT-trades-2020-04.zip",
+      "ts": "2026-10-20T19:44:04.178Z",
+      "evidence": "어긋난 1분 전부 같은 시장 다른 종목도 틀림 (분 2020-04-09T08:42)"
+    },
+    {
+      "key": "data/spot/monthly/trades/ETHUSDT/ETHUSDT-trades-2019-12.zip",
+      "ts": "2026-10-20T19:56:15.202Z",
+      "evidence": "어긋난 3분 전부 같은 시장 다른 종목도 틀림 (분 2019-12-04T05:06,2019-12-04T10:18,2019-12-04T10:24)"
+    },
+    {
+      "key": "data/spot/monthly/trades/ETCUSDT/ETCUSDT-trades-2019-12.zip",
+      "ts": "2026-10-20T19:56:58.800Z",
+      "evidence": "어긋난 1분 전부 같은 시장 다른 종목도 틀림 (분 2019-12-04T10:18)"
+    },
+    {
+      "key": "data/spot/monthly/trades/BTCUSDT/BTCUSDT-trades-2019-10.zip",
+      "ts": "2026-10-20T19:59:21.416Z",
+      "evidence": "어긋난 3분 전부 같은 시장 다른 종목도 틀림 (분 2019-10-01T06:14,2019-10-01T06:33,2019-10-01T06:55)"
+    },
+    {
+      "key": "data/spot/monthly/trades/ETHUSDT/ETHUSDT-trades-2019-10.zip",
+      "ts": "2026-10-20T19:59:21.417Z",
+      "evidence": "어긋난 3분 전부 같은 시장 다른 종목도 틀림 (분 2019-10-01T06:14,2019-10-01T06:33,2019-10-01T06:55)"
+    },
+    {
+      "key": "data/spot/monthly/trades/BTCUSDT/BTCUSDT-trades-2019-08.zip",
+      "ts": "2026-10-20T20:01:47.682Z",
+      "evidence": "어긋난 1분 전부 같은 시장 다른 종목도 틀림 (분 2019-08-20T05:15)"
+    },
+    {
+      "key": "data/spot/monthly/trades/ETCUSDT/ETCUSDT-trades-2019-08.zip",
+      "ts": "2026-10-20T20:01:59.287Z",
+      "evidence": "어긋난 1분 전부 같은 시장 다른 종목도 틀림 (분 2019-08-20T05:15)"
+    },
+    {
+      "key": "data/spot/monthly/trades/BTCUSDT/BTCUSDT-trades-2019-05.zip",
+      "ts": "2026-10-20T20:06:22.591Z",
+      "evidence": "어긋난 1분 전부 같은 시장 다른 종목도 틀림 (분 2019-05-08T08:41)"
+    },
+    {
+      "key": "data/spot/monthly/trades/ETHUSDT/ETHUSDT-trades-2019-05.zip",
+      "ts": "2026-10-20T20:06:22.591Z",
+      "evidence": "어긋난 1분 전부 같은 시장 다른 종목도 틀림 (분 2019-05-08T08:41)"
+    },
+    {
+      "key": "data/spot/monthly/trades/BTCUSDT/BTCUSDT-trades-2018-11.zip",
+      "ts": "2026-10-20T20:12:36.853Z",
+      "evidence": "어긋난 2분 전부 같은 시장 다른 종목도 틀림 (분 2018-11-26T02:33,2018-11-26T02:43)"
+    },
+    {
+      "key": "data/spot/monthly/trades/ETHUSDT/ETHUSDT-trades-2018-11.zip",
+      "ts": "2026-10-20T20:12:36.853Z",
+      "evidence": "어긋난 2분 전부 같은 시장 다른 종목도 틀림 (분 2018-11-26T02:33,2018-11-26T02:43)"
+    },
+    {
+      "key": "data/spot/monthly/trades/BTCUSDT/BTCUSDT-trades-2018-10.zip",
+      "ts": "2026-10-20T20:13:29.673Z",
+      "evidence": "어긋난 5분 전부 같은 시장 다른 종목도 틀림 (분 2018-10-11T01:06,2018-10-11T01:07,2018-10-11T01:08,2018-10-11T06:20,2018-10-11T06:21)"
+    },
+    {
+      "key": "data/spot/monthly/trades/ETHUSDT/ETHUSDT-trades-2018-10.zip",
+      "ts": "2026-10-20T20:13:29.673Z",
+      "evidence": "어긋난 5분 전부 같은 시장 다른 종목도 틀림 (분 2018-10-11T01:06,2018-10-11T01:07,2018-10-11T01:08,2018-10-11T06:20,2018-10-11T06:21)"
+    },
+    {
+      "key": "data/spot/monthly/trades/ETCUSDT/ETCUSDT-trades-2018-10.zip",
+      "ts": "2026-10-20T20:13:42.167Z",
+      "evidence": "어긋난 1분 전부 같은 시장 다른 종목도 틀림 (분 2018-10-11T01:07)"
+    },
+    {
+      "key": "data/spot/monthly/trades/ETHUSDT/ETHUSDT-trades-2018-09.zip",
+      "ts": "2026-10-20T20:14:36.644Z",
+      "evidence": "어긋난 3분 전부 같은 시장 다른 종목도 틀림 (분 2018-09-05T09:53,2018-09-05T09:54,2018-09-05T09:55)"
+    },
+    {
+      "key": "data/spot/monthly/trades/ETCUSDT/ETCUSDT-trades-2018-09.zip",
+      "ts": "2026-10-20T20:14:43.630Z",
+      "evidence": "어긋난 3분 전부 같은 시장 다른 종목도 틀림 (분 2018-09-05T09:53,2018-09-05T09:54,2018-09-05T09:55)"
+    },
+    {
+      "key": "data/spot/monthly/trades/BTCUSDT/BTCUSDT-trades-2018-06.zip",
+      "ts": "2026-10-20T20:17:33.972Z",
+      "evidence": "어긋난 3분 전부 같은 시장 다른 종목도 틀림 (분 2018-06-01T03:50,2018-06-05T07:18,2018-06-20T03:44)"
+    },
+    {
+      "key": "data/spot/monthly/trades/ETHUSDT/ETHUSDT-trades-2018-06.zip",
+      "ts": "2026-10-20T20:17:33.972Z",
+      "evidence": "어긋난 3분 전부 같은 시장 다른 종목도 틀림 (분 2018-06-01T03:50,2018-06-05T07:18,2018-06-20T03:44)"
+    },
+    {
+      "key": "data/spot/monthly/trades/BTCUSDT/BTCUSDT-trades-2018-05.zip",
+      "ts": "2026-10-20T20:18:34.055Z",
+      "evidence": "어긋난 3분 전부 같은 시장 다른 종목도 틀림 (분 2018-05-16T07:40,2018-05-23T10:00,2018-05-29T06:50)"
+    },
+    {
+      "key": "data/spot/monthly/trades/BTCUSDT/BTCUSDT-trades-2018-04.zip",
+      "ts": "2026-10-20T20:19:13.757Z",
+      "evidence": "어긋난 2분 전부 같은 시장 다른 종목도 틀림 (분 2018-04-15T06:08,2018-04-15T13:27)"
+    },
+    {
+      "key": "data/spot/monthly/trades/ETHUSDT/ETHUSDT-trades-2018-04.zip",
+      "ts": "2026-10-20T20:19:13.758Z",
+      "evidence": "어긋난 2분 전부 같은 시장 다른 종목도 틀림 (분 2018-04-15T06:08,2018-04-15T13:27)"
+    },
+    {
+      "key": "data/spot/monthly/trades/ETHUSDT/ETHUSDT-trades-2018-03.zip",
+      "ts": "2026-10-20T20:19:55.189Z",
+      "evidence": "어긋난 26분 전부 같은 시장 다른 종목도 틀림 (분 2018-03-04T14:36,2018-03-04T14:37,2018-03-04T14:38,2018-03-04T14:39,2018-03-04T14:40,…)"
+    },
+    {
+      "key": "data/spot/monthly/trades/ETHUSDT/ETHUSDT-trades-2018-02.zip",
+      "ts": "2026-10-20T20:20:49.830Z",
+      "evidence": "어긋난 1202분 전부 같은 시장 다른 종목도 틀림 (분 2018-02-05T10:09,2018-02-09T09:59,2018-02-09T10:00,2018-02-09T10:01,2018-02-09T10:02,…)"
+    }
+  ],
+  "placeholder_rows_note": "aggTrades 가짜 거래 줄 (가격 0·수량 0·첫/끝 거래 id -1) — 본 집계·C3 재검산 양쪽에서 빼고 따로 센다 (h6_of.mjs·h6_recheck.mjs, 2026-10-21 대장님 지시). 체결 번호를 쓰지 않아 거래가 아니다.",
+  "placeholder_rows": [
+    {
+      "key": "data/spot/monthly/aggTrades/BTCUSDT/BTCUSDT-aggTrades-2018-01.zip",
+      "count": 20,
+      "evidence": "[{\"line\":1964499,\"agg_id\":5897501,\"time\":1515904656173},{\"line\":1964500,\"agg_id\":5897502,\"time\":1515904656188},{\"line\":2055483,\"agg_id\":5988485,\"time\":1515947273607},{\"line\":2055484,\"agg_id\":5988486,\"time\":1515947273607},{\"line\":2081620,\"agg_id\":6014622,\"time\":1515967382718}]"
+    },
+    {
+      "key": "data/spot/monthly/aggTrades/BTCUSDT/BTCUSDT-aggTrades-2017-12.zip",
+      "count": 2,
+      "evidence": "[{\"line\":103957,\"agg_id\":1195416,\"time\":1512378391578},{\"line\":103958,\"agg_id\":1195417,\"time\":1512378392510}]"
+    },
+    {
+      "key": "data/spot/monthly/aggTrades/ETHUSDT/ETHUSDT-aggTrades-2017-12.zip",
+      "count": 2,
+      "evidence": "[{\"line\":62747,\"agg_id\":839539,\"time\":1512378391570},{\"line\":62748,\"agg_id\":839540,\"time\":1512378405056}]"
+    },
+    {
+      "key": "data/spot/monthly/aggTrades/ETHUSDT/ETHUSDT-aggTrades-2018-01.zip",
+      "count": 90,
+      "evidence": "[{\"line\":1651824,\"agg_id\":3987654,\"time\":1515947277130},{\"line\":1651825,\"agg_id\":3987655,\"time\":1515947278391},{\"line\":1673841,\"agg_id\":4009671,\"time\":1515967384318},{\"line\":1673842,\"agg_id\":4009672,\"time\":1515967384445},{\"line\":1685177,\"agg_id\":4021007,\"time\":1515977102984}]"
+    }
+  ],
+  "other_source_anomalies": [
+    {
+      "id": "spot-ethusdt-aggtrades-2018-01-five-copies",
+      "key": "data/spot/monthly/aggTrades/ETHUSDT/ETHUSDT-aggTrades-2018-01.zip",
+      "zip_sha256": "5959a152e95af8c47e7f05f1a99d334827aa843e29b42ef62d082ff1966c765d",
+      "evidence": "23,319,800줄 = 4,663,960줄 × 5벌. 1~4벌 md5 29435262f6a3312dbab4e235be3d33ed 같음, 5벌째 6fe676dd8ff17ac133d92097df3a390d — 벌 안 1,583,457번 줄 agg 3919287 수량만 다름(1~4벌 0.87093, 5벌 0.49622). 같은 달 trades(tf_1m, C2X PASS)와 맞는 쪽은 5벌째. 지금 of_1m 이 달 44,515분은 5벌 합 — 고칠지는 대장님 결정 (2026-10-21 확인)",
+      "handled": "pick_copy: 5벌째만 집계 (2026-10-21 대장님 지시)"
+    },
+    {
+      "id": "spot-btcusdt-aggtrades-2026-02-block-repeat",
+      "key": "data/spot/monthly/aggTrades/BTCUSDT/BTCUSDT-aggTrades-2026-02.zip",
+      "zip_sha256": "25cc3860ed725d78dde165c99ca85950c0272ae0d95df54568fe5069a68d6fb2",
+      "evidence": "52,474,665줄. 25,564,326번·25,565,326번 줄에서 agg id가 3856672511로 되돌아감 — 1000줄 안팎 묶음이 다시 나옴 (시간 역행 2, id 공백 2). 가짜 거래 줄 0. aggTrades C2 FAIL(정보) 어긋난 5분 rel_count 4.7e-5"
+    },
+    {
+      "id": "trades-time-order-reversed",
+      "note": "trades 원본 줄이 시간 순서가 아님 (마지막 AGGX 로그 기준 reversed>0). 분별 합은 순서와 무관해 tf_1m 값은 그대로이고, C2X는 reversed>0 규칙으로 FAIL. 2026-10-21 S4X에서 정리",
+      "units": [
+        {
+          "key": "data/futures/um/monthly/trades/BTCUSDT/BTCUSDT-trades-2023-01.zip",
+          "c2x": "FAIL",
+          "mismatch_min": 1,
+          "lines": 82370049,
+          "id_gaps": 60813181,
+          "reversed": 30404420
+        },
+        {
+          "key": "data/futures/um/monthly/trades/BTCUSDT/BTCUSDT-trades-2023-04.zip",
+          "c2x": "FAIL",
+          "mismatch_min": 20,
+          "lines": 122599909,
+          "id_gaps": 66251258,
+          "reversed": 33121424
+        },
+        {
+          "key": "data/futures/um/monthly/trades/BTCUSDT/BTCUSDT-trades-2023-05.zip",
+          "c2x": "FAIL",
+          "mismatch_min": 14,
+          "lines": 125955608,
+          "id_gaps": 72962069,
+          "reversed": 36477123
+        },
+        {
+          "key": "data/futures/um/monthly/trades/BTCUSDT/BTCUSDT-trades-2023-06.zip",
+          "c2x": "FAIL",
+          "mismatch_min": 5,
+          "lines": 128846250,
+          "id_gaps": 78739865,
+          "reversed": 39367765
+        },
+        {
+          "key": "data/futures/um/monthly/trades/BTCUSDT/BTCUSDT-trades-2023-10.zip",
+          "c2x": "FAIL",
+          "mismatch_min": 10,
+          "lines": 113686101,
+          "id_gaps": 79892952,
+          "reversed": 39939204
+        },
+        {
+          "key": "data/futures/um/monthly/trades/BTCUSDT/BTCUSDT-trades-2023-12.zip",
+          "c2x": "FAIL",
+          "mismatch_min": 14,
+          "lines": 91635719,
+          "id_gaps": 73181503,
+          "reversed": 36590602
+        },
+        {
+          "key": "data/futures/um/monthly/trades/BTCUSDT/BTCUSDT-trades-2024-01.zip",
+          "c2x": "FAIL",
+          "mismatch_min": 13,
+          "lines": 121894153,
+          "id_gaps": 118562364,
+          "reversed": 59281178
+        },
+        {
+          "key": "data/futures/um/monthly/trades/ETHUSDT/ETHUSDT-trades-2023-04.zip",
+          "c2x": "FAIL",
+          "mismatch_min": 1,
+          "lines": 92338780,
+          "id_gaps": 5733260,
+          "reversed": 2860295
+        },
+        {
+          "key": "data/futures/um/monthly/trades/ETHUSDT/ETHUSDT-trades-2023-10.zip",
+          "c2x": "FAIL",
+          "mismatch_min": 0,
+          "lines": 67101061,
+          "id_gaps": 61387360,
+          "reversed": 30693644
+        },
+        {
+          "key": "data/futures/um/monthly/trades/ETHUSDT/ETHUSDT-trades-2023-11.zip",
+          "c2x": "FAIL",
+          "mismatch_min": 540,
+          "lines": 78255845,
+          "id_gaps": 59811510,
+          "reversed": 29904969
+        },
+        {
+          "key": "data/futures/um/monthly/trades/ETHUSDT/ETHUSDT-trades-2023-12.zip",
+          "c2x": "FAIL",
+          "mismatch_min": 1,
+          "lines": 79431908,
+          "id_gaps": 71978303,
+          "reversed": 35988761
+        },
+        {
+          "key": "data/futures/um/monthly/trades/ETHUSDT/ETHUSDT-trades-2024-01.zip",
+          "c2x": "FAIL",
+          "mismatch_min": 3,
+          "lines": 104701861,
+          "id_gaps": 85792933,
+          "reversed": 42896288
+        },
+        {
+          "key": "data/futures/um/monthly/trades/ETHUSDT/ETHUSDT-trades-2025-08.zip",
+          "c2x": "FAIL",
+          "mismatch_min": 105,
+          "lines": 226053520,
+          "id_gaps": 136876,
+          "reversed": 2
+        },
+        {
+          "key": "data/spot/monthly/trades/ETHUSDT/ETHUSDT-trades-2018-05.zip",
+          "c2x": "FAIL",
+          "mismatch_min": 592,
+          "lines": 4045765,
+          "id_gaps": 77,
+          "reversed": 46
+        },
+        {
+          "key": "data/spot/monthly/trades/ETHUSDT/ETHUSDT-trades-2026-04.zip",
+          "c2x": "FAIL",
+          "mismatch_min": 42,
+          "lines": 96630031,
+          "id_gaps": 1,
+          "reversed": 1
+        },
+        {
+          "key": "data/spot/monthly/trades/ETHUSDT/ETHUSDT-trades-2026-07.zip",
+          "c2x": "FAIL",
+          "mismatch_min": 188,
+          "lines": 70458896,
+          "id_gaps": 1,
+          "reversed": 1
+        }
+      ]
+    }
+  ],
+  "pick_copy_note": "N벌 원본에서 한 벌만 읽는다 (h6_run.mjs가 읽음). 벌마다 줄 수·md5가 기록과 같을 때만 고른 벌을 집계하고, 다르면 집계 오류로 멈춘다. 2026-10-21 대장님 지시: spot ETHUSDT-aggTrades-2018-01은 5벌째만.",
+  "pick_copy": [
+    {
+      "key": "data/spot/monthly/aggTrades/ETHUSDT/ETHUSDT-aggTrades-2018-01.zip",
+      "zip_sha256": "5959a152e95af8c47e7f05f1a99d334827aa843e29b42ef62d082ff1966c765d",
+      "copies": 5,
+      "pick": 5,
+      "copy_lines": 4663960,
+      "pick_md5": "6fe676dd8ff17ac133d92097df3a390d",
+      "other_md5": "29435262f6a3312dbab4e235be3d33ed",
+      "evidence": "전체 1,707,295,075바이트 = 341,459,015 × 5, 벌마다 4,663,960줄. 5벌째만 집계하면 44,515분 전부 같은 달 tf_1m과 n_trades·buy_qty·sell_qty가 같음 (2026-10-21 확인, 바이낸스 원본 sha 같음)"
+    }
+  ]
+}
