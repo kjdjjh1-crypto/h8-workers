@@ -1,0 +1,9 @@
+data/futures/um/monthly/trades/XRPUSDT/XRPUSDT-trades-2020-12.zip
+data/futures/um/monthly/trades/XRPUSDT/XRPUSDT-trades-2021-01.zip
+data/futures/um/monthly/trades/XRPUSDT/XRPUSDT-trades-2021-02.zip
+data/futures/um/monthly/trades/XRPUSDT/XRPUSDT-trades-2021-03.zip
+data/futures/um/monthly/trades/XRPUSDT/XRPUSDT-trades-2021-04.zip
+data/futures/um/monthly/trades/XRPUSDT/XRPUSDT-trades-2021-05.zip
+data/futures/um/monthly/trades/XRPUSDT/XRPUSDT-trades-2021-06.zip
+data/futures/um/monthly/trades/XRPUSDT/XRPUSDT-trades-2021-07.zip
+data/futures/um/monthly/trades/XRPUSDT/XRPUSDT-trades-2021-08.zip
