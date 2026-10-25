@@ -1,0 +1,9 @@
+data/spot/monthly/trades/ETHFDUSD/ETHFDUSD-trades-2024-11.zip
+data/spot/monthly/trades/ETHFDUSD/ETHFDUSD-trades-2024-12.zip
+data/spot/monthly/trades/ETHFDUSD/ETHFDUSD-trades-2025-01.zip
+data/spot/monthly/trades/ETHFDUSD/ETHFDUSD-trades-2025-02.zip
+data/spot/monthly/trades/ETHFDUSD/ETHFDUSD-trades-2025-03.zip
+data/spot/monthly/trades/ETHFDUSD/ETHFDUSD-trades-2025-04.zip
+data/spot/monthly/trades/ETHFDUSD/ETHFDUSD-trades-2025-05.zip
+data/spot/monthly/trades/ETHFDUSD/ETHFDUSD-trades-2025-06.zip
+data/spot/monthly/trades/ETHFDUSD/ETHFDUSD-trades-2025-07.zip
