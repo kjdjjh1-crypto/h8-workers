@@ -1,0 +1,3 @@
+data/futures/um/monthly/trades/1000PEPEUSDT/1000PEPEUSDT-trades-2024-02.zip
+data/futures/um/monthly/trades/1000PEPEUSDT/1000PEPEUSDT-trades-2024-03.zip
+data/futures/um/monthly/trades/1000PEPEUSDT/1000PEPEUSDT-trades-2024-04.zip
