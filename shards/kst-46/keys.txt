@@ -1,0 +1,1 @@
+data/spot/monthly/trades/BTCUSDT/BTCUSDT-trades-2026-09.zip
