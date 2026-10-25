@@ -1,0 +1,7 @@
+data/futures/um/monthly/aggTrades/BTCUSDT/BTCUSDT-aggTrades-2025-11.zip
+data/futures/um/monthly/aggTrades/BTCUSDT/BTCUSDT-aggTrades-2025-12.zip
+data/futures/um/monthly/aggTrades/BTCUSDT/BTCUSDT-aggTrades-2026-01.zip
+data/futures/um/monthly/aggTrades/BTCUSDT/BTCUSDT-aggTrades-2026-02.zip
+data/futures/um/monthly/aggTrades/BTCUSDT/BTCUSDT-aggTrades-2026-03.zip
+data/futures/um/monthly/aggTrades/BTCUSDT/BTCUSDT-aggTrades-2026-04.zip
+data/futures/um/monthly/aggTrades/BTCUSDT/BTCUSDT-aggTrades-2026-05.zip
