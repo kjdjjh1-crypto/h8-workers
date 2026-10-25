@@ -1,6 +1,0 @@
-data/futures/um/monthly/trades/BTCUSDT/BTCUSDT-trades-2026-04.zip
-data/futures/um/monthly/trades/BTCUSDT/BTCUSDT-trades-2026-05.zip
-data/futures/um/monthly/trades/BTCUSDT/BTCUSDT-trades-2026-06.zip
-data/futures/um/monthly/trades/BTCUSDT/BTCUSDT-trades-2026-07.zip
-data/futures/um/monthly/trades/BTCUSDT/BTCUSDT-trades-2026-08.zip
-data/futures/um/monthly/trades/BTCUSDT/BTCUSDT-trades-2026-09.zip

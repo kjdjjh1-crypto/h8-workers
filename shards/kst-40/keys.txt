@@ -1,3 +1,0 @@
-data/spot/monthly/trades/BTCUSDT/BTCUSDT-trades-2022-10.zip
-data/spot/monthly/trades/BTCUSDT/BTCUSDT-trades-2022-11.zip
-data/spot/monthly/trades/BTCUSDT/BTCUSDT-trades-2022-12.zip

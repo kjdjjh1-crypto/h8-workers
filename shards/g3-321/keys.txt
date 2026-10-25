@@ -1,3 +1,0 @@
-data/spot/monthly/trades/BTCFDUSD/BTCFDUSD-trades-2024-03.zip
-data/spot/monthly/trades/BTCFDUSD/BTCFDUSD-trades-2024-04.zip
-data/spot/monthly/trades/BTCFDUSD/BTCFDUSD-trades-2024-05.zip

@@ -1,7 +1,0 @@
-data/spot/monthly/trades/BTCBUSD/BTCBUSD-trades-2022-11.zip
-data/spot/monthly/trades/BTCBUSD/BTCBUSD-trades-2022-12.zip
-data/spot/monthly/trades/BTCBUSD/BTCBUSD-trades-2023-01.zip
-data/spot/monthly/trades/BTCBUSD/BTCBUSD-trades-2023-02.zip
-data/spot/monthly/trades/BTCBUSD/BTCBUSD-trades-2023-03.zip
-data/spot/monthly/trades/BTCBUSD/BTCBUSD-trades-2023-04.zip
-data/spot/monthly/trades/BTCBUSD/BTCBUSD-trades-2023-05.zip

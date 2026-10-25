@@ -1,8 +1,0 @@
-data/spot/monthly/trades/ETHUSDT/ETHUSDT-trades-2025-02.zip
-data/spot/monthly/trades/ETHUSDT/ETHUSDT-trades-2025-03.zip
-data/spot/monthly/trades/ETHUSDT/ETHUSDT-trades-2025-04.zip
-data/spot/monthly/trades/ETHUSDT/ETHUSDT-trades-2025-05.zip
-data/spot/monthly/trades/ETHUSDT/ETHUSDT-trades-2025-06.zip
-data/spot/monthly/trades/ETHUSDT/ETHUSDT-trades-2025-07.zip
-data/spot/monthly/trades/ETHUSDT/ETHUSDT-trades-2025-08.zip
-data/spot/monthly/trades/ETHUSDT/ETHUSDT-trades-2025-09.zip
