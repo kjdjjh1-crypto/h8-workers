@@ -1,0 +1,6 @@
+data/spot/monthly/aggTrades/BTCFDUSD/BTCFDUSD-aggTrades-2024-06.zip
+data/spot/monthly/aggTrades/BTCFDUSD/BTCFDUSD-aggTrades-2024-07.zip
+data/spot/monthly/aggTrades/BTCFDUSD/BTCFDUSD-aggTrades-2024-08.zip
+data/spot/monthly/aggTrades/BTCFDUSD/BTCFDUSD-aggTrades-2024-09.zip
+data/spot/monthly/aggTrades/BTCFDUSD/BTCFDUSD-aggTrades-2024-10.zip
+data/spot/monthly/aggTrades/BTCFDUSD/BTCFDUSD-aggTrades-2024-11.zip
