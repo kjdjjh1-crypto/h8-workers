@@ -1,0 +1,3 @@
+data/spot/monthly/trades/FLOKIUSDT/FLOKIUSDT-trades-2024-11.zip
+data/spot/monthly/trades/FLOKIUSDT/FLOKIUSDT-trades-2024-12.zip
+data/spot/monthly/trades/FLOKIUSDT/FLOKIUSDT-trades-2025-01.zip
