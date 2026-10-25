@@ -1,0 +1,7 @@
+data/futures/um/monthly/trades/XRPUSDT/XRPUSDT-trades-2025-03.zip
+data/futures/um/monthly/trades/XRPUSDT/XRPUSDT-trades-2025-04.zip
+data/futures/um/monthly/trades/XRPUSDT/XRPUSDT-trades-2025-05.zip
+data/futures/um/monthly/trades/XRPUSDT/XRPUSDT-trades-2025-06.zip
+data/futures/um/monthly/trades/XRPUSDT/XRPUSDT-trades-2025-07.zip
+data/futures/um/monthly/trades/XRPUSDT/XRPUSDT-trades-2025-08.zip
+data/futures/um/monthly/trades/XRPUSDT/XRPUSDT-trades-2025-09.zip
