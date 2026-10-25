@@ -1,0 +1,14 @@
+data/spot/monthly/trades/BTCUSDT/BTCUSDT-trades-2020-01.zip
+data/spot/monthly/trades/BTCUSDT/BTCUSDT-trades-2020-02.zip
+data/spot/monthly/trades/BTCUSDT/BTCUSDT-trades-2020-03.zip
+data/spot/monthly/trades/BTCUSDT/BTCUSDT-trades-2020-04.zip
+data/spot/monthly/trades/BTCUSDT/BTCUSDT-trades-2020-05.zip
+data/spot/monthly/trades/BTCUSDT/BTCUSDT-trades-2020-06.zip
+data/spot/monthly/trades/BTCUSDT/BTCUSDT-trades-2020-07.zip
+data/spot/monthly/trades/BTCUSDT/BTCUSDT-trades-2020-08.zip
+data/spot/monthly/trades/BTCUSDT/BTCUSDT-trades-2020-09.zip
+data/spot/monthly/trades/BTCUSDT/BTCUSDT-trades-2020-10.zip
+data/spot/monthly/trades/BTCUSDT/BTCUSDT-trades-2020-11.zip
+data/spot/monthly/trades/BTCUSDT/BTCUSDT-trades-2020-12.zip
+data/spot/monthly/trades/BTCUSDT/BTCUSDT-trades-2021-01.zip
+data/spot/monthly/trades/BTCUSDT/BTCUSDT-trades-2021-02.zip
