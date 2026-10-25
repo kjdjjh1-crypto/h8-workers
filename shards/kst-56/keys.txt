@@ -1,0 +1,4 @@
+data/futures/um/monthly/trades/ETHUSDT/ETHUSDT-trades-2025-12.zip
+data/futures/um/monthly/trades/ETHUSDT/ETHUSDT-trades-2026-01.zip
+data/futures/um/monthly/trades/ETHUSDT/ETHUSDT-trades-2026-02.zip
+data/futures/um/monthly/trades/ETHUSDT/ETHUSDT-trades-2026-03.zip
